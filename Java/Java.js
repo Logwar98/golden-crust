@@ -28,7 +28,7 @@ function openPopup() {
     var subject = document.getElementById('subject').value;
 
     if (fname && lname && email && reason && subject) {
-        document.getElementById('popupText').innerText = `Are you sure your name is '${fname} ${lname}', your email is '${email}', and the feedback is correct?`;
+        document.getElementById('popupText').innerText = `Are you sure your name is '${fname} ${lname}', your email is '${email}'?`;
         document.getElementById('overlay2').style.display = 'block';
         document.getElementById('popup').style.display = 'block';
     } else {
