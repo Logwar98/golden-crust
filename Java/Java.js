@@ -29,7 +29,7 @@ function openPopup() {
 
     if (fname && lname && email && reason && subject) {
         document.getElementById('popupText').innerText = `Are you sure your name is '${fname} ${lname}', your email is '${email}', and the feedback is correct?`;
-        document.getElementById('overlay').style.display = 'block';
+        document.getElementById('overlay2').style.display = 'block';
         document.getElementById('popup').style.display = 'block';
     } else {
         alert('Please fill in all fields.');
@@ -37,7 +37,7 @@ function openPopup() {
 }
 
 function confirmSubmit(isConfirmed) {
-    document.getElementById('overlay').style.display = 'none';
+    document.getElementById('overlay2').style.display = 'none';
     document.getElementById('popup').style.display = 'none';
 
     if (isConfirmed) {
